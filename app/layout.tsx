@@ -4,7 +4,7 @@ import "./globals.css"
 import { ClientThemeProvider } from "@/components/client-theme-provider"
 import { MainNav } from "@/components/main-nav"
 import { ModeToggle } from "@/components/mode-toggle"
-import type React from "react"
+import type React from "react" // Import React
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ClientThemeProvider>
           <div className="flex flex-col min-h-screen">
